@@ -1,6 +1,7 @@
 ---
 title: "Comment Setup un environnement de test avec Next.js 13, Typescript et Vitest"
 date: "2023-08-02"
+tags: ["Next.js", "Typescript", "Vitest", "Jest", "React Testing Library"]
 ---
 
 ### Pourquoi ce doc ?
@@ -26,7 +27,7 @@ yarn add -D vitest @testing-library/react jsdom @testing-library/jest-dom @vitej
 
 [**@vitejs/plugin-react**](https://www.npmjs.com/package/@vitejs/plugin-react) : pour dire à Vitest que l’on travaille sur React.
 
-[**React Testing Library**](https://testing-library.com/docs/react-testing-library/intro/) : qui permet d’écrire des tests pour les composants React.  
+[**React Testing Library**](https://testing-library.com/docs/react-testing-library/intro/) : qui permet d’écrire des tests pour les composants React.
 
 [**jest-dom**](https://www.npmjs.com/package/@testing-library/jest-dom) : pour écrire des tests unitaires pour le DOM.
 
@@ -71,9 +72,9 @@ export default defineConfig({
 });
 ```
 
-Il ne reste plus qu’à créer un dossier __tests__ dans src pour y mettre vos tests.
+Il ne reste plus qu’à créer un dossier **tests** dans src pour y mettre vos tests.
 
-**Attention** : comme je l’ai dit en intro Vitest est basé sur Vite, donc dans un environnement React tous vos fichiers doivent avoir l’extension .tsx, même ceux de test. 
+**Attention** : comme je l’ai dit en intro Vitest est basé sur Vite, donc dans un environnement React tous vos fichiers doivent avoir l’extension .tsx, même ceux de test.
 
 Pour lancer vos tests vous n’aurez qu’à faire :
 
